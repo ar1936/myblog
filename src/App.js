@@ -1,5 +1,4 @@
 import './App.css';
-import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import AboutPage from './pages/AboutPage';
 import ArticlePage from './pages/ArticlePage';
 import ArticlesListPage from './pages/ArticlesListPage';
@@ -8,26 +7,13 @@ import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div>
-        <Routes>
-          
-          <Route path="/about" element={<AboutPage/>} />
-          
-          <Route path="/articles" element={<ArticlePage/>} />
-
-          <Route path="/articles/:articleId" element={<ArticlesListPage/>} />
-
-
-          <Route path="/" element={<HomePage/>}/>
-
-          <Route path="/notfound" element={<NotFoundPage/>} />
-          
-          
-        </Routes>
-      </div>
-    </BrowserRouter>
-    
+    <div>
+      <AboutPage></AboutPage>
+      <ArticlePage></ArticlePage>
+      <ArticlesListPage></ArticlesListPage>
+      <HomePage></HomePage>
+      <NotFoundPage></NotFoundPage>
+    </div>
   );
 }
 
