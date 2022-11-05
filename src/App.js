@@ -21,7 +21,7 @@ function App() {
             
             <Route path="/articles" element={<ArticlePage/>} />
 
-            <Route path="/articles/:articleId" element={<ArticlesListPage/>} />
+            <Route path="/articles/:articleId" element={<ArticlePage/>} />
 
             <Route path="/notfound" element={<NotFoundPage/>} />
             
